@@ -15,7 +15,7 @@
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
-/* RESET */
+/* RESET and general configs */
 
 * {
     margin: 0;
@@ -23,8 +23,65 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ffffff;
+    color: white;
+}
+
+/* Generic classes */
+
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 /* Mobile First */
 
 /* HEADER */
+
+header {
+    height: 60px;
+    background-color: #1B1426;
+}
+
 /* Header Top */
+
+header .header-top {
+    display: none;
+}
+
 /* Header Bottom */
+
+/* justify content + align itens */
+.between-center-alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.3));
+}
+
+header .header-bottom .user-menu {
+    display: none;
+}
