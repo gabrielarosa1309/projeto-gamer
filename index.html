@@ -57,7 +57,7 @@
                     <img src="./assets/icons/More.png" alt="Botão que abre e fecha o menu de usuário">
                 </a>
 
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">Início</a>
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
@@ -65,16 +65,15 @@
 
                     <!-- visível apenas no mobile -->
 
-                    <div class="contacts">
-                        <div class="phone">
-                            <img src="../assets/icons/call.png" alt="Ícone do telefone">
-                            <span>(11) 0900-1010</span>
-                        </div>
-                        <div class="email">
-                            <img src="../assets/icons/sms.png" alt="Ícone do email">
-                            <span>contato@gamer.com.br</span>
-                        </div>
-                    </div>
+                    <a class="phone">
+                        <img src="../assets/icons/call.png" alt="Ícone do telefone">
+                        <span>(11) 0900-1010</span>
+                    </a>
+                    <a class="email">
+                        <img src="../assets/icons/sms.png" alt="Ícone do email">
+                        <span>contato@gamer.com.br</span>
+                    </a>
+                 
 
                     <div class="social-media">
                         <a href="">
@@ -118,6 +117,12 @@
     <section class="news"></section>
 
     <footer></footer>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+    </script>
 
 </body>
 
