@@ -141,3 +141,38 @@ header .header-bottom .user-menu {
     transition: right 0.4s;
 }
 
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 606px;
+    background-color: rebeccapurple;
+    background-image: url(../assets/images/banner-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    font-family: "titilliumweb-black";
+    font-size: 40px;
+    text-shadow: 0 0 7px #FD4255;
+}
+
+.banner .botao-sobre {
+    width: 171px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    text-decoration: none;
+    font-family: "titilliumweb-black";
+    font-size: 24px;
+    border-radius: 8px;
+}
