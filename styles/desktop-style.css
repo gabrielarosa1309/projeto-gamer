@@ -1,0 +1,58 @@
+/* FONTS */
+@font-face {
+    font-family: "titilliumweb-black";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+    header .header-top {
+        width: 100%;
+        position: fixed;
+        display: block;
+        height: 50px;
+        padding: 10px;
+        border-bottom: 1px solid #F9AA01;
+    }
+
+    header .header-top .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header-top .social-media {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    header .header-top .contacts {
+        display: flex;
+        gap: 60px;
+    } 
+
+    header .header-top .contacts > * {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: white;
+
+        font-family: "inter";
+        font-size: 14px;
+    }
+
+    header .header-bottom {
+        display: block;
+    }
+}

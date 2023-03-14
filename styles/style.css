@@ -35,6 +35,14 @@ body {
     margin: 0 auto;
 }
 
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.show-user {
+    right: 0 !important;
+}
+
 /* Mobile First */
 
 /* HEADER */
@@ -75,7 +83,7 @@ header .header-bottom img.logo {
 header .header-bottom nav {
     position: fixed;
     top: 60px;
-    left: 0;
+    left: -80vw;
     width: 80vw;
     height: calc(100vh - 60px);
 
@@ -86,17 +94,20 @@ header .header-bottom nav {
 
     background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.3));
     backdrop-filter: blur(45px);
+
+    transition: left 0.4s;
 }
 
 /* somente links "filhos diretos" */
 header .header-bottom nav > a {
-    padding: 30px 0;
     color: white;
     font-family: Inter;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
+
+    padding: 30px 0;
     border-bottom: 2px solid #F9AA01;
 }
 
@@ -110,7 +121,23 @@ header .header-bottom nav .social-media {
     gap: 50px; /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
 }
 
-
+/* 3 dots menu - right */
 header .header-bottom .user-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    position: fixed;
+    top: 60px;
+    right: -66px;
+
+    width: 66px;
+    height: 213px;
+
+    background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.3));
+    backdrop-filter: blur(45px);
+
+    transition: right 0.4s;
 }
+

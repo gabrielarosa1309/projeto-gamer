@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/desktop-style.css" media="(min-width: 1024px)">
     <title>Projeto Gamer</title>
 </head>
 
@@ -13,7 +14,7 @@
     <header>
 
         <div class="header-top">
-            <div class="layout-grid">
+            <div class="layout-grid flex">
                 <div class="contacts">
                     <div class="phone">
                         <img src="../assets/icons/call.png" alt="Ícone do telefone">
@@ -43,9 +44,7 @@
             <div class="layout-grid between-center-alignment">
 
                 <!-- hamburguer menu -->
-                <a href="">
-                    <img src="../assets/icons/Menu button of three horizontal lines.png" class="hamburguer-menu" alt="Ícone para abrir e fechar o menu mobile">
-                </a>
+                <img onclick="mostrarMenu()" src="../assets/icons/Menu button of three horizontal lines.png" class="hamburguer-menu" alt="Ícone para abrir e fechar o menu mobile">
 
                 <!-- logotype -->
                 <a href="">
@@ -53,9 +52,8 @@
                 </a>
                 
                 <!-- mobile lateral user menu -->
-                <a href="">
-                    <img src="./assets/icons/More.png" alt="Botão que abre e fecha o menu de usuário">
-                </a>
+                <img onclick="showUser()" src="./assets/icons/More.png" alt="Botão que abre e fecha o menu de usuário">
+               
 
                 <nav class="menu" id="menu">
                     <a href="">Início</a>
@@ -91,7 +89,7 @@
 
                 <!-- 3 dots menu (right) -->
 
-                <div class="user-menu">
+                <div class="user-menu" id="menu-user">
                     <a href="">
                         <img src="../assets/icons/User.png" alt="ícone do usuário">
                     </a>
@@ -121,6 +119,10 @@
     <script>
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+
+        function showUser() {
+            document.getElementById("menu-user").classList.toggle("show-user");
         }
     </script>
 
