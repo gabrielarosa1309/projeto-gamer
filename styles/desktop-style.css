@@ -16,7 +16,8 @@
 
 /* Desktop */
 @media screen and (min-width: 1024px){
-    header .header-top {
+    
+    /* header .header-top {
         width: 100%;
         position: fixed;
         display: block;
@@ -54,5 +55,5 @@
 
     header .header-bottom {
         display: block;
-    }
+    } */
 }
