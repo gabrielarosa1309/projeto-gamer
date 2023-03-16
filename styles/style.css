@@ -287,3 +287,252 @@ main .info .second-card-container > img {
    left: 26px;
    bottom: -10px;
 }
+
+/* news */
+main .news {
+    width: 100%;
+    height: 3675px;
+    padding-top: 95px;
+    background-image: url(../assets/images/news-box-image.png);
+}
+
+main .news .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .news h2 {
+    font-family: "titilliumweb-black";
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+main .news hr {
+    width: 153px;
+    border: 3px solid #F9AA01;
+
+    margin-bottom: 86px;
+}
+
+main .news .layout-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .news article.box-1 {
+    width: 335px;
+    height: 387px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: linear-gradient(152.78deg, #D9D9D9 -3.58%, #55505D 48.72%, #1B1426 100%);
+
+    margin-bottom: 34px;
+}
+
+main .news article.box-1 .box-title-1 {
+    font-family: "titilliumweb-bold";
+    font-size: 24px;
+
+    align-self: flex-start;
+    margin-left: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-1 .box-text-1 {
+    font-family: "quicksand";
+    font-size: 16px;
+    text-align: justify;
+
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-2 {
+    width: 335px;
+    height: 387px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: linear-gradient(152.78deg, #D9D9D9 -3.58%, #55505D 48.72%, #1B1426 100%);
+
+    margin-bottom: 34px;
+}
+
+main .news article.box-2 .box-title-2 {
+    font-family: "titilliumweb-bold";
+    font-size: 24px;
+
+    align-self: flex-start;
+    margin-left: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-2 .box-text-2 {
+    font-family: "quicksand";
+    font-size: 16px;
+    text-align: justify;
+
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-3 {
+    width: 335px;
+    height: 387px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: linear-gradient(152.78deg, #D9D9D9 -3.58%, #55505D 48.72%, #1B1426 100%);
+
+    margin-bottom: 34px;
+}
+
+main .news article.box-3 .box-title-3 {
+    font-family: "titilliumweb-bold";
+    font-size: 24px;
+
+    align-self: flex-start;
+    margin-left: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-3 .box-text-3 {
+    font-family: "quicksand";
+    font-size: 16px;
+    text-align: justify;
+
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-4 {
+    width: 335px;
+    height: 387px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: linear-gradient(152.78deg, #D9D9D9 -3.58%, #55505D 48.72%, #1B1426 100%);
+
+    margin-bottom: 34px;
+}
+
+main .news article.box-4 .box-title-4 {
+    font-family: "titilliumweb-bold";
+    font-size: 24px;
+
+    align-self: flex-start;
+    margin-left: 19px;
+    margin-top: 9px;
+}
+
+main .news article.box-4 .box-text-4 {
+    font-family: "quicksand";
+    font-size: 16px;
+    text-align: justify;
+
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 9px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 1531px;
+
+    background-image: url(../assets/images/backgroung_footer.svg);
+}
+
+footer .footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+footer img.logotype {
+    width: 110px;
+    height: 32px;
+
+    margin-bottom: 49px;
+}
+
+footer p.success-p {
+    height: 87px;
+
+    font-family: "quicksand";
+    font-size: 14px;
+    text-align: justify;
+
+    margin-bottom: 30px;
+}
+
+footer .social-media-footer {
+    width: 333px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 111px;
+}
+
+footer h2.useful-links {
+    font-family: "titilliumweb-black";
+    font-size: 30px;
+}
+
+footer hr.links {
+    width: 113px;
+    border: 3px solid #F9AA01;
+}
+
+footer h2.contacts {
+    font-family: "titilliumweb-black";
+    font-size: 30px;
+}
+
+footer hr.contacts {
+    width: 94px;
+    border: 3px solid #F9AA01;
+}
+
+footer h2.newsletter {
+    font-family: "titilliumweb-black";
+    font-size: 30px;
+}
+
+footer hr.input {
+    width: 113px;
+    border: 3px solid #F9AA01;
+}
