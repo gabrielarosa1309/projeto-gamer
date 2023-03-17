@@ -15,45 +15,123 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1024px){
-    
-    /* header .header-top {
+@media screen and (min-width: 1200px) {
+    .layout-grid {
         width: 100%;
-        position: fixed;
+        max-width: 1200px;
+        /* border: 3px dotted yellowgreen; */
+    }
+
+    /* HEADER  */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    /* Header Top */
+    header .header-top {
+        /* block é o valor default da maioria dos elementos */
         display: block;
         height: 50px;
-        padding: 10px;
-        border-bottom: 1px solid #F9AA01;
-    }
-
-    header .header-top .flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    header .header-top .social-media {
-        display: flex;
-        align-items: center;
-        gap: 25px;
+        border-bottom: 2px solid #F9AA01;
     }
 
     header .header-top .contacts {
+        width: 415px;
         display: flex;
-        gap: 60px;
-    } 
-
-    header .header-top .contacts > * {
-        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 8px;
-        color: white;
 
-        font-family: "inter";
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    header .header-top .contacts > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Esconde elementos desnecessários */
+    header .hamburguer-menu,
+    header .dots-menu,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .social-media {
+        display: none;
+    }
+
+    /* Header Bottom */
+    header .header-bottom {
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .header-bottom img .logo {
+        width: 187px;
+        height: 65px;
+        margin-left: 72px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    header .header-bottom nav>a {
+        border: none;
         font-size: 14px;
     }
 
-    header .header-bottom {
-        display: block;
-    } */
+    header .header-bottom nav>a:hover {
+        background-color: transparent;
+        color: #F9AA01;
+    }
+
+    header .header-bottom .user-menu {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: auto;
+        background-color: transparent;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
+    }
+
+    /* banner */
+    main .banner {
+        height: 722px;
+        /* alterar a imagem de fundo */
+        background-image: url(../assets/images/desktop-images/desktop-banner.png);
+        background-size: cover;
+        background-position: top;
+
+    }
+    
+    main .banner h1 {
+        font-size: 80px;
+    }
+
+    /* games */
+    main .games {
+        height: 500px;
+        flex-direction: row;
+    }
+
+    main .games img {
+        width: 556px;
+        height: 313px;
+    }
 }

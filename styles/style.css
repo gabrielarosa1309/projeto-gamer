@@ -463,76 +463,39 @@ main .news article.box-4 .box-text-4 {
 
 /* footer */
 footer {
-    width: 100%;
-    height: 1531px;
-
+    box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
     background-image: url(../assets/images/backgroung_footer.svg);
-}
-
-footer .footer-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-position: top;
+    background-size: contain;
 
     padding-top: 100px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-bottom: 30px;
 }
 
-footer img.logotype {
+footer #about {
+    width: 100%;
+    height: 304px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #about > img{
     width: 110px;
     height: 32px;
-
-    margin-bottom: 49px;
 }
 
-footer p.success-p {
-    height: 87px;
-
+footer #about p {
     font-family: "quicksand";
+    font-weight: 400;
     font-size: 14px;
-    text-align: justify;
-
-    margin-bottom: 30px;
 }
 
 footer .social-media-footer {
-    width: 333px;
-    height: 40px;
-
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 111px;
-}
-
-footer h2.useful-links {
-    font-family: "titilliumweb-black";
-    font-size: 30px;
-}
-
-footer hr.links {
-    width: 113px;
-    border: 3px solid #F9AA01;
-}
-
-footer h2.contacts {
-    font-family: "titilliumweb-black";
-    font-size: 30px;
-}
-
-footer hr.contacts {
-    width: 94px;
-    border: 3px solid #F9AA01;
-}
-
-footer h2.newsletter {
-    font-family: "titilliumweb-black";
-    font-size: 30px;
-}
-
-footer hr.input {
-    width: 113px;
-    border: 3px solid #F9AA01;
+    justify-content: center;
+    gap: 25px;
 }

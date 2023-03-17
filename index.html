@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/desktop-style.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="styles/desktop-style.css" media="(min-width: 1200px)">
     <title>Projeto Gamer</title>
 </head>
 
@@ -55,7 +55,7 @@
                 </a>
 
                 <!-- mobile lateral user menu -->
-                <img onclick="showUser()" src="./assets/icons/More.png" alt="Botão que abre e fecha o menu de usuário">
+                <img onclick="showUser()" src="./assets/icons/More.png" class="dots-menu" alt="Botão que abre e fecha o menu de usuário">
 
 
                 <nav class="menu" id="menu">
@@ -230,13 +230,11 @@
     </main>
 
     <footer>
-        <div class="footer-flex">
-            <div class="first-column-footer">
-                <img class="logotype" src="../assets/images/Logo.png" alt="Logo Gamer">
+       <div class="layout-grid footer-top">
+            <div id="about">
+                <img src="./assets/images/Logo.png" alt="Logotipo da empresa Gamer. Texto Gamer com um joystick ao centro">
 
-                <p class="success-p">Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa
-                    equipe talentosa e
-                    altamente comprometida.</p>
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
 
                 <div class="social-media-footer">
                     <a href="">
@@ -251,44 +249,71 @@
                 </div>
             </div>
 
-            <div class="second-column-footer">
-                <h2 class="useful-links">Links Úteis</h2>
+            <div id="useful-links">
+                <div class="useful-title">
+                    <h3>Links Úteis</h3>
+                    <hr>
+                </div>
 
-                <hr class="links">
-
-                <a href="">Início</a>
-                <a href="">Jogadores</a>
-                <a href="">Notícias</a>
-                <a href="">Login</a>
-                <a href="">Equipes</a>
+                <ul class="footer-titles">
+                    <li>
+                        <a href="">Início</a>
+                    </li>
+                    <li>
+                        <a href="">Jogadores</a>
+                    </li>
+                    <li>
+                        <a href="">Equipes</a>
+                    </li>
+                    <li>
+                        <a href="">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="third-column-footer">
-                <h2 class="contacts">Contatos</h2>
+            <div id="contacts">
+                <div class="footer-titles">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
 
-                <hr class="contacts">
+                <p>
+                    <span class="contacts-info">Localização:</span>
+                    Rua Niterói, 180 - São Caetano do Sul- SP
+                </p> 
 
-                <p>Localização:Rua Niterói, 180 - São Caetano do Sul- SP Junte-se a nós:contato@gamer.com.br
-                    Telefone:(11)
-                    0900-1010</p>
+                <p>
+                    <span class="contacts-info">Junte-se a nós:</span>
+                    contato@gamer.com.br 
+                </p>
+
+                <p>
+                    <span class="contacts-info">Telefone:</span>
+                    (11) 0900-1010
+                </p>
             </div>
 
-            <div class="fourth-column-footer">
-                <h2 class="newsletter">Newsletter</h2>
+            <div id="newsletter">
+                <div class="footer-titles">
+                    <h3>Newsletter</h3>
+                    <hr>
+                </div>
 
-                <hr class="input">
-
-                <input type="text">
-
-                <button>Enviar</button>
+                <form action="" class="frm-news">
+                    <input type="email" placeholder="Digite seu e-mail:">
+                    <button>Enviar</button>
+                </form>
             </div>
+       </div>
 
-            <button>
-                <img src="../assets/icons/top-page.png" alt="Voltar ao topo da página">
-            </button>
+       <div class="layout-grid footer-bottom">
+            <p id="rights">Todos os direitos reservados.</p>
+       </div>
 
-            <p>©Copyright2022-GamerJogosDigitais</p>
-        </div>
+       <img src="./assets/icons/icons-footer/Arrow down sign to navigate.svg" alt="Ícone com a seta para cima, clique para voltar ao topo">
 
     </footer>
 
