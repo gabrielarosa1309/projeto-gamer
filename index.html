@@ -55,7 +55,8 @@
                 </a>
 
                 <!-- mobile lateral user menu -->
-                <img onclick="showUser()" src="./assets/icons/More.png" class="dots-menu" alt="Botão que abre e fecha o menu de usuário">
+                <img onclick="showUser()" src="./assets/icons/More.png" class="dots-menu"
+                    alt="Botão que abre e fecha o menu de usuário">
 
 
                 <nav class="menu" id="menu">
@@ -230,11 +231,13 @@
     </main>
 
     <footer>
-       <div class="layout-grid footer-top">
+        <div class="layout-grid footer-top">
             <div id="about">
-                <img src="./assets/images/Logo.png" alt="Logotipo da empresa Gamer. Texto Gamer com um joystick ao centro">
+                <img src="./assets/images/Logo.png"
+                    alt="Logotipo da empresa Gamer. Texto Gamer com um joystick ao centro">
 
-                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
 
                 <div class="social-media-footer">
                     <a href="">
@@ -250,12 +253,12 @@
             </div>
 
             <div id="useful-links">
-                <div class="useful-title">
+                <div class="footer-titles">
                     <h3>Links Úteis</h3>
                     <hr>
                 </div>
 
-                <ul class="footer-titles">
+                <ul class="ul-configs">
                     <li>
                         <a href="">Início</a>
                     </li>
@@ -283,11 +286,11 @@
                 <p>
                     <span class="contacts-info">Localização:</span>
                     Rua Niterói, 180 - São Caetano do Sul- SP
-                </p> 
+                </p>
 
                 <p>
                     <span class="contacts-info">Junte-se a nós:</span>
-                    contato@gamer.com.br 
+                    contato@gamer.com.br
                 </p>
 
                 <p>
@@ -307,13 +310,16 @@
                     <button>Enviar</button>
                 </form>
             </div>
-       </div>
+        </div>
 
-       <div class="layout-grid footer-bottom">
-            <p id="rights">Todos os direitos reservados.</p>
-       </div>
+        <div class="layout-grid footer-bottom">
 
-       <img src="./assets/icons/icons-footer/Arrow down sign to navigate.svg" alt="Ícone com a seta para cima, clique para voltar ao topo">
+            <button onclick="clickReturnTop()" class="return-top-button yellow-button">
+                <img src="./assets/icons/icons-footer/back-to-top.svg"
+                    alt="Uma seta que aponta para cima e indica um botão de retorno para o topo da página">
+            </button>
+
+            <p class="copyright">©Copyright2022-GamerJogosDigitais</p>
 
     </footer>
 
@@ -324,6 +330,11 @@
 
         function showUser() {
             document.getElementById("menu-user").classList.toggle("show-user");
+        }
+
+        function clickReturnTop() {
+            document.body.scrollTop = 0 // For Safari
+            document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
         }
     </script>
 
