@@ -150,6 +150,108 @@ header .header-bottom .user-menu {
     transition: right 0.4s;
 }
 
+/* MAIN */
+main {
+    width: 100%;
+    height: 687px;
+
+    margin-top: 60px;
+    padding: 82px 20px;
+
+    background-image: url(../assets/images/login-box-image.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+main .login-box-title h1 {
+    font-family: "titilliumweb-black";
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+main .login-box-title hr {
+    border: 1px solid #F9AA01;
+}
+
+main .login-box {
+    width: 335px;
+    height: 462px;
+
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    background: linear-gradient(112.72deg, rgba(60, 3, 65, 0.38) 0.76%, rgba(27, 20, 38, 0.6) 98.99%);
+}
+
+main .login-box .inputs {
+    width: 100%;
+
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .login-box .inputs .email-input,
+main .login-box .inputs .password-input{
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    background: linear-gradient(106.3deg, rgba(239, 239, 239, 0.6) 11.46%, rgba(239, 239, 239, 0.1) 88.49%);
+}
+
+main .login-box .inputs img {
+    height: 20px;
+    margin: 0 10px;
+}
+
+main .login-box .inputs input {
+    width: 80%;
+    height: 100%;
+
+    padding: 12px 0;
+
+    background-color: transparent;
+    border: none;
+
+    font-family: "titilliumweb-regular";
+    font-size: 16px;
+    color: white;
+}
+
+main .login-box .inputs input::placeholder {
+    font-family: "titilliumweb-regular";
+    font-size: 16px;
+    color: white;
+}
+
+main .login-box .login-button {
+    width: 273px;
+    height: 40px;
+
+    background-color: #F9AA01;
+    border-radius: 8px;
+
+    font-family: "titilliumweb-bold";
+    font-size: 24px;
+
+    margin-bottom: 50px;
+}
+
 /* FOOTER */
 footer {
     box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);

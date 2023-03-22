@@ -126,8 +126,19 @@
         background-color: transparent;
     }
 
-    /* FOOTER */
+    /* MAIN */
+    main {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
+    main .login-box {
+        width: 800px;
+    }
+
+    /* FOOTER */
     footer {
         position: relative;
         padding: 147px 119px 72px;
