@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login-style.css">
-    <link rel="stylesheet" href="/styles/login-desktop-style.css" media="(min-width: 1024px)">
-    <title>Login - Projeto Gamer</title>
+    <link rel="stylesheet" href="/styles/players-style.css">
+    <link rel="stylesheet" href="/styles/players-desktop-style.css" media="(min-width: 1024px)">
+    <title>Cadastro de Jogadores - Projeto Gamer</title>
 </head>
 <body>
     
@@ -107,24 +107,37 @@
         </div>
 
     </header>
- 
+
     <main>
-        <form action="" class="login-box">
-            <div class="login-box-title">
-                <h1>Login</h1>
+        <form action="" class="players-sign-in-box">
+            <div class="players-si-box-title">
+                <h1>Cadastro de jogadores</h1>
                 <hr>
             </div>
             <div class="inputs">
+                <div class="id-input">
+                    <input type="text" name="id" id="id-sign-in" placeholder="Digite o ID do jogador:">
+                </div>
+                <div class="team-input">
+                    <select id="team-input" name="team-input" form="teamform">
+                        <option value="0">Selecione uma equipe:</option>
+                        <option value="Equipe 1">Equipe 1</option>
+                        <option value="Equipe 2">Equipe 2</option>
+                        <option value="Equipe 3">Equipe 3</option>
+                        <option value="Equipe 4">Equipe 4</option>
+                    </select>
+                </div>
+                <div class="name-input">
+                    <input type="text" name="name" id="name-sign-in" placeholder="Digite o nome do jogador:">
+                </div>
                 <div class="email-input">
-                    <img src="../assets/icons/icons-login/user-input.png" alt="Ícone de usuário, simboliza o e-mail do usuário">
-                    <input type="email" name="email" id="email-login" placeholder="Digite seu e-mail:">
+                    <input type="email" name="email" id="email-sign-in" placeholder="Digite o e-mail do jogador:">
                 </div>
                 <div class="password-input">
-                    <img src="../assets/icons/icons-login/Key.png" alt="Ícone de chave, simboliza a senha do usuário">
-                    <input type="password" name="password" id="password-login" placeholder="Digite sua senha:">
+                    <input type="password" name="password" id="password-sign-in" placeholder="Digite a senha:">
                 </div>
             </div>
-            <button class="login-button" type="submit">Logar</button>
+            <button class="sign-in-button" type="submit">Cadastrar</button>
         </form>
     </main>
 

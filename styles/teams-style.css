@@ -136,7 +136,7 @@ header .header-bottom .user-menu {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
+
     position: fixed;
     top: 60px;
     right: -66px;
@@ -153,21 +153,23 @@ header .header-bottom .user-menu {
 /* MAIN */
 main {
     width: 100%;
-    height: 687px;
+    height: 1231px;
 
-    margin-top: 60px;
-    padding: 82px 20px;
+    margin-top: 60px; 
+    padding: 85px 20px; 
 
-    background-image: url(../assets/images/login-box-image.png);
+    background-image: url(../assets/images/teams-background.png);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
 }
 
-
-main .login-box {
-    width: 335px;
-    height: 462px;
+main .team-sign-in-box {
+    width: 330px;
+    height: 492px;
     
     padding: 40px 30px;
     
@@ -182,19 +184,26 @@ main .login-box {
     background: linear-gradient(112.72deg, rgba(60, 3, 65, 0.38) 0.76%, rgba(27, 20, 38, 0.6) 98.99%);
 }
 
-main .login-box-title h1 {
+main .team-si-box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .team-si-box-title h1 {
     font-family: "titilliumweb-black";
     font-size: 24px;
     color: white;
     text-transform: uppercase;
+    text-align: center;
 }
 
-main .login-box-title hr {
-    border: 1px solid #F9AA01;
-} 
+main .team-si-box-title hr {
+    border: 2px solid #F9AA01;
+}
 
-main .login-box .inputs {
-    width: 100%;
+main .team-sign-in-box .inputs {
+    /* width: 100%; */
 
     gap: 30px;
 
@@ -202,8 +211,8 @@ main .login-box .inputs {
     flex-direction: column;
 }
 
-main .login-box .inputs .email-input,
-main .login-box .inputs .password-input{
+main .team-sign-in-box .id-input,
+main .team-sign-in-box .name-input {
     display: flex;
     align-items: center;
 
@@ -215,16 +224,11 @@ main .login-box .inputs .password-input{
     background: linear-gradient(106.3deg, rgba(239, 239, 239, 0.6) 11.46%, rgba(239, 239, 239, 0.1) 88.49%);
 }
 
-main .login-box .inputs img {
-    height: 20px;
-    margin: 0 10px;
-}
+main .team-sign-in-box .inputs input {
+    width: 272px;
+    height: 40px;
 
-main .login-box .inputs input {
-    width: 80%;
-    height: 100%;
-
-    padding: 12px 0;
+    padding: 10px 10px;
 
     background-color: transparent;
     border: none;
@@ -234,14 +238,14 @@ main .login-box .inputs input {
     color: white;
 }
 
-main .login-box .inputs input::placeholder {
+main .team-sign-in-box .inputs input::placeholder {
     font-family: "titilliumweb-regular";
     font-size: 16px;
     color: white;
 }
 
-main .login-box .login-button {
-    width: 273px;
+main .team-sign-in-box .team-sign-in-button {
+    width: 272px;
     height: 40px;
 
     background-color: #F9AA01;

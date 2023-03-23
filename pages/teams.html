@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login-style.css">
-    <link rel="stylesheet" href="/styles/login-desktop-style.css" media="(min-width: 1024px)">
-    <title>Login - Projeto Gamer</title>
+    <link rel="stylesheet" href="/styles/teams-style.css">
+    <link rel="stylesheet" href="/styles/teams-desktop-style.css" media="(min-width: 1024px)">
+    <title>Cadastro de Equipes - Projeto Gamer</title>
 </head>
 <body>
     
@@ -107,24 +107,25 @@
         </div>
 
     </header>
- 
+
     <main>
-        <form action="" class="login-box">
-            <div class="login-box-title">
-                <h1>Login</h1>
+        <form action="" class="team-sign-in-box">
+            <div class="team-si-box-title">
+                <h1>Cadastro de equipes</h1>
                 <hr>
             </div>
             <div class="inputs">
-                <div class="email-input">
-                    <img src="../assets/icons/icons-login/user-input.png" alt="Ícone de usuário, simboliza o e-mail do usuário">
-                    <input type="email" name="email" id="email-login" placeholder="Digite seu e-mail:">
+                <div class="id-input">
+                    <input type="text" name="id" id="id-team-sign-in" placeholder="Digite o ID da sua equipe:">
                 </div>
-                <div class="password-input">
-                    <img src="../assets/icons/icons-login/Key.png" alt="Ícone de chave, simboliza a senha do usuário">
-                    <input type="password" name="password" id="password-login" placeholder="Digite sua senha:">
+                <div class="name-input">
+                    <input type="text" name="name" id="name-team-sign-in" placeholder="Digite o nome da sua equipe:">
+                </div>
+                <div class="img-input">
+                    <input type="file" name="image" id="image-team-sign-in" placeholder="Imagem da equipe">
                 </div>
             </div>
-            <button class="login-button" type="submit">Logar</button>
+            <button class="team-sign-in-button" type="submit">Cadastrar</button>
         </form>
     </main>
 
