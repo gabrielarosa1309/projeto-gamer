@@ -126,6 +126,22 @@
         background-color: transparent;
     }
 
+    /* MAIN */
+    main {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main .team-sign-in-box {
+        width: 800px;
+    }
+
+    main table {
+        width: 800px;
+    }
+
      /* FOOTER */
      footer {
         position: relative;
