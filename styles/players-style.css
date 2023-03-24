@@ -155,6 +155,9 @@ main {
     width: 100%;
     height: 1403px;
 
+    position: relative;
+    z-index: 0;
+
     margin-top: 60px; 
     padding: 85px 20px; 
 
@@ -164,12 +167,28 @@ main {
     background-repeat: no-repeat;
     
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main::after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
 }
 
 main .players-sign-in-box {
-    width: 356px;
+    width: 330px;
     height: 649px;
+
+    position: relative;
+    z-index: 2;
     
     padding: 40px 30px;
     
@@ -177,6 +196,7 @@ main .players-sign-in-box {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
     
     border: 1px solid white;
     border-radius: 8px;
@@ -278,6 +298,97 @@ main .players-sign-in-box .sign-in-button {
     font-size: 24px;
 
     margin-bottom: 50px;
+}
+
+/* Table */
+main table {
+    width: 335px;
+    
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}  
+
+main thead,
+main tbody {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main thead tr {
+    margin-bottom: 30px;
+    border-bottom: 3px solid #F9AA01;
+}
+
+main table thead th {
+    width: 20%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F9AA01;
+
+}
+
+main table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main table tbody tr {
+    height: 125px;
+    
+    margin-bottom: 24px;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    background: linear-gradient(91.42deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 100%);
+    backdrop-filter: blur(4px);
+
+    /* linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box; */
+}
+
+main table td {
+    width: 100%;
+    height: 77px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-right: 3px solid #F9AA01;
+}
+
+main .id-td {
+    font-family: "titilliumweb-bold";
+    font-size: 18px;
+    color: white;
+}
+
+main .name-td {
+    font-family: "titilliumweb-bold";
+    font-size: 18px;
+    color: white;
+}
+
+main .email-td {
+    font-family: "titilliumweb-bold";
+    font-size: 18px;
+    color: white;
+}
+
+main table td:last-of-type {
+    border: none;
 }
 
 /* FOOTER */

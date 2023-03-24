@@ -146,6 +146,10 @@
         width: 565px;
     }
 
+    main table {
+        width: 800px;
+    }
+
     /* FOOTER */
     footer {
         position: relative;
