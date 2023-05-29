@@ -1,2 +1,2 @@
 # Projeto Gamer
-Disponível em [https://gabiiramosss.github.io/projeto-gamer/]
+Disponível em [https://gabrielarosa1309.github.io/projeto-gamer/]
